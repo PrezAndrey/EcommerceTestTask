@@ -34,10 +34,10 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         switch collectionView {
         case categoryCollectionView:
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CategoryCollectionViewCell
-            cell.backgroundColor = .blue
+            cell.backgroundColor = collectionView.backgroundColor
         case hotSalesCollectionView:
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: "hotSales", for: indexPath) as! HotSalesCollectionViewCell
-            cell.backgroundColor = .red
+            cell.backgroundColor = .black
         default:
             print("Problem")
         }

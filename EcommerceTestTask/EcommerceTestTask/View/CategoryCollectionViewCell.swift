@@ -10,4 +10,9 @@ import UIKit
 class CategoryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var categoryButton: UIButton!
     
+    
+    @IBAction func categoryButtonDidPressed(_ sender: Any) {
+        
+    }
+    
 }
