@@ -7,7 +7,9 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, Storyboarded {
+    
+    var coordinator: MainCoordinator?
  
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
